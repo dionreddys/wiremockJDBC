@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/gateway/OmniDebitCardPinValidation/1.0/debitCardPinValidation"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 349,
+    "headers": {
+      "X-Simulator": "PT-Wiremock",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Credential": "true",
+      "Access-Control-Allow-Headers": "accept, content-type"
+    },
+    "jsonBody": {
+      "debitCardPinValidationOmniResponse": {
+        "soaHeader": {
+          "messageVersion": "1.0",
+          "messageType": "JSON",
+          "messageSubType": "debitCardPinValidation",
+          "messageSender": "EVR",
+          "senderDomain": "Omni",
+          "messageTimeStamp": "2020-02-27 02:54:19",
+          "initiatedTimeStamp": "2020-02-27 02:54:19",
+          "trackingID": "20191011190648574",
+          "channelId": "112"
+        },
+        "messageHeader": {
+          "property": [
+            {
+              "propertyKey": "retrievalReferenceNo",
+              "propertyValue": "556614760935"
+            },
+            {
+              "propertyKey": "systemTraceNo",
+              "propertyValue": "60220"
+            }
+          ]
+        },
+        "payload": {
+          "responseCode": "00",
+          "responseMessage": "success",
+          "responseTimestamp": "2020-03-18 16:07:25.434"
+        }
+      }
+    }
+  }
+}

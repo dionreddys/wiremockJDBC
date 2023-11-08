@@ -1,0 +1,256 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/gateway/CoreBankDebitCardAcknowledgeActivation/1.0/debitCardAcknowledgeActivation"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 149,
+    "headers": {
+      "X-Simulator": "PT-Wiremock",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Credential": "true",
+      "Access-Control-Allow-Headers": "accept, content-type"
+    },
+    "jsonBody": {
+      "debitCardAcknowledgeActivationResponse": {
+        "soaHeader": {
+          "messageVersion": "1.0",
+          "messageType": "JSON",
+          "messageSubType": "debitCardAcknowledgeActivation",
+          "messageSender": "EVR",
+          "senderDomain": "CoreBank",
+          "messageTimeStamp": "2020-07-20 09:52:46.456",
+          "initiatedTimeStamp": "2020-07-20 09:52:46.45",
+          "trackingID": "2007211121233",
+          "channelId": "112"
+        },
+        "messageHeader": {
+          "property": [
+            {
+              "propertyKey": "journalSequence",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "tellerId",
+              "propertyValue": "BMEVRTLID"
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "7810"
+            },
+            {
+              "propertyKey": "internalId",
+              "propertyValue": "1595323075672"
+            },
+            {
+              "propertyKey": "headerType",
+              "propertyValue": "*SOKI"
+            },
+            {
+              "propertyKey": "sourceId",
+              "propertyValue": "*SOAI"
+            },
+            {
+              "propertyKey": "destinationId",
+              "propertyValue": "MBDTMNHD"
+            },
+            {
+              "propertyKey": "messageStatus",
+              "propertyValue": "/0000000"
+            },
+            {
+              "propertyKey": "bankIdNumber",
+              "propertyValue": null
+            },
+            {
+              "propertyKey": "node",
+              "propertyValue": "1"
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "7810"
+            },
+            {
+              "propertyKey": "retrievalReferenceNumber",
+              "propertyValue": "1424212007211639201009"
+            },
+            {
+              "propertyKey": "acquirerReferenceNumber",
+              "propertyValue": "117554802667"
+            },
+            {
+              "propertyKey": "transmissionNumber",
+              "propertyValue": null
+            },
+            {
+              "propertyKey": "numberOfRecordsToBeLoaded",
+              "propertyValue": "10"
+            },
+            {
+              "propertyKey": "numberOfErrorsToBeLoaded",
+              "propertyValue": "10"
+            },
+            {
+              "propertyKey": "userId",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "supervisorId",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "moreRecordIndicator",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "cutOffIndicator",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "userData",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseResultCode",
+              "propertyValue": "AA"
+            },
+            {
+              "propertyKey": "referenceNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "rebidNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "endOfGroupIndicator",
+              "propertyValue": "*END"
+            },
+            {
+              "propertyKey": "blockMessageNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "sourceID",
+              "propertyValue": "SOA"
+            },
+            {
+              "propertyKey": "returnDataQueueName",
+              "propertyValue": "BDSPO7002O"
+            },
+            {
+              "propertyKey": "terminalID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "bankNumber",
+              "propertyValue": "8"
+            },
+            {
+              "propertyKey": "branchNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "reviewSupervisorID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "transmitSupervisorID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "7810"
+            },
+            {
+              "propertyKey": "actionCode",
+              "propertyValue": "C"
+            },
+            {
+              "propertyKey": "transactionMode",
+              "propertyValue": "R"
+            },
+            {
+              "propertyKey": "noOfRecordsToRetrieve",
+              "propertyValue": "1"
+            },
+            {
+              "propertyKey": "moreRecordsIndicator",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "searchMethod",
+              "propertyValue": "F"
+            },
+            {
+              "propertyKey": "responseErrorCode1",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode1",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode2",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode2",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode3",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode3",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode4",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode4",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode5",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode5",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "accountNo",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "accountType",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "filler",
+              "propertyValue": ""
+            }
+          ]
+        },
+        "payload": {
+          "responseCode": "1",
+          "responseMessage": "OK",
+          "responseTimestamp": "2020-07-21T16:17:55.0Z",
+          "debitCardAcknowledgeActivationInfo": {
+            "cardNumber": "4616996000000148",
+            "acknowledge": "Y",
+            "branchNumber": "11500",
+            "userID": "BMEVRTLID"
+          }
+        }
+      }
+    }
+  }
+}

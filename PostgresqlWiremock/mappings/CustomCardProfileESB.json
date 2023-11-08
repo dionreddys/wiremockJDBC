@@ -1,0 +1,90 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/gateway/CoreBankCIFInquiry/1.0/dynamic"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 134,
+    "headers": {
+      "X-Simulator": "PT-Wiremock",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+      "Access-Control-Allow-Credentials": "true"
+    },
+    "transformerParameters": {
+      "subqueries": {
+        "cifInquiryResponse": {
+          "subqueries": {
+            "soaHeader": {
+              "query": "select * from soa_header",
+              "resultType": "object"
+            },
+            "messageHeader": {
+              "subqueries": {
+                "property": {
+                  "query": "select * from property",
+                  "resultType": "list"
+                }
+              },
+              "resultType": "object"
+            },
+            "payload": {
+              "query": "select * from payload",
+              "resultType": "object",
+              "subqueries": {
+                "customer": {
+                  "query": "select * from customer",
+                  "resultType": "list",
+                  "subqueries": {
+                    "address": {
+                      "query": "select * from addresses",
+                      "resultType": "list"
+                    },
+                    "contactDetails": {
+                      "query": "select telephone, fax, handphone from contact_details",
+                      "resultType": "object",
+                      "subqueries": {
+                        "customerCategory": {
+                          "query": "select customer_type_code as customerTypeCode from contact_details",
+                          "resultType": "object"
+                        }
+                      }
+                    },
+                    "corporateCustomerData": {
+                      "query": "select * from corporate_customer_data",
+                      "resultType":"object"
+                    },
+                    "identificationData": {
+                      "resultType": "object",
+                      "subqueries": {
+                        "identificationDetails": {
+                          "query": "select * from identification_details",
+                          "resultType": "list"
+                        }
+                      }
+                    },
+                    "customerAdditionalData": {
+                      "resultType": "object",
+                      "subqueries": {
+                        "property": {
+                          "query": "select * from property",
+                          "resultType": "list"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "resultType": "object"
+        }
+      }
+    },
+    "transformers": [
+      "wiremock-csv"
+    ]
+  }
+}

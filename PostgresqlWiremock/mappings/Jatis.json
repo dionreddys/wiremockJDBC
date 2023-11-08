@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api.jatismobile.com/index.ashx?userId=mandiridsgm2m&password=mandiridsgm2m789&msisdn=081392441137&message=spam%20jatis%20response%202&sender=bankmandiri&batchname=OTP-NBDS&uploadby=NBDS&channel=2&division=Distribution%20Strategy%20Group"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 300,
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "body": "Status=1&MessageId=FvYhNeVdQP2oydxMU7JEVA9S"
+  }
+}

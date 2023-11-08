@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/v1",
+        "headers": {
+            "Content-Type": {
+              "equalTo": "application/json"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "body": "{{request.body}}"
+        
+    }
+}

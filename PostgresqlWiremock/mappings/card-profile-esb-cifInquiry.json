@@ -1,0 +1,392 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/gateway/CoreBankCIFInquiry/1.0/cifInquiry"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 134,
+    "headers": {
+      "X-Simulator": "PT-Wiremock",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Credential": "true",
+      "Access-Control-Allow-Headers": "accept, content-type"
+    },
+    "jsonBody": {
+      "cifInquiryResponse": {
+        "soaHeader": {
+          "messageVersion": "1.0",
+          "messageType": "JSON",
+          "messageSubType": "cifInquiry",
+          "messageSender": "EVR",
+          "senderDomain": "CoreBank",
+          "messageTimeStamp": "2018-09-24 14:07:59.000",
+          "initiatedTimeStamp": "2018-09-24 14:07:59.000",
+          "trackingID": "CRCIT005",
+          "captureSystem": "SOA"
+        },
+        "messageHeader": {
+          "property": [
+            {
+              "propertyKey": "tellerId",
+              "propertyValue": "9916490"
+            },
+            {
+              "propertyKey": "journalSequence",
+              "propertyValue": "494666"
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "1618"
+            },
+            {
+              "propertyKey": "internalId",
+              "propertyValue": "1584953629451"
+            },
+            {
+              "propertyKey": "headerType",
+              "propertyValue": "*SOKI"
+            },
+            {
+              "propertyKey": "sourceId",
+              "propertyValue": "*SOAI"
+            },
+            {
+              "propertyKey": "destinationId",
+              "propertyValue": "MBCFIQHD"
+            },
+            {
+              "propertyKey": "messageStatus",
+              "propertyValue": "/0000000"
+            },
+            {
+              "propertyKey": "bankIdNumber",
+              "propertyValue": null
+            },
+            {
+              "propertyKey": "node",
+              "propertyValue": "1"
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "1618"
+            },
+            {
+              "propertyKey": "retrievalReferenceNumber",
+              "propertyValue": "6634722003231607519835"
+            },
+            {
+              "propertyKey": "acquirerReferenceNumber",
+              "propertyValue": "153494102214"
+            },
+            {
+              "propertyKey": "transmissionNumber",
+              "propertyValue": null
+            },
+            {
+              "propertyKey": "numberOfRecordsToBeLoaded",
+              "propertyValue": "10"
+            },
+            {
+              "propertyKey": "numberOfErrorsToBeLoaded",
+              "propertyValue": "10"
+            },
+            {
+              "propertyKey": "userId",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "supervisorId",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "moreRecordIndicator",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "cutOffIndicator",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "userData",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseResultCode",
+              "propertyValue": "AA"
+            },
+            {
+              "propertyKey": "referenceNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "rebidNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "endOfGroupIndicator",
+              "propertyValue": "*END"
+            },
+            {
+              "propertyKey": "blockMessageNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "sourceID",
+              "propertyValue": "SOA"
+            },
+            {
+              "propertyKey": "returnDataQueueName",
+              "propertyValue": "BDSPO7002O"
+            },
+            {
+              "propertyKey": "terminalID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "bankNumber",
+              "propertyValue": "8"
+            },
+            {
+              "propertyKey": "branchNumber",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "reviewSupervisorID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "transmitSupervisorID",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "transactionCode",
+              "propertyValue": "1618"
+            },
+            {
+              "propertyKey": "actionCode",
+              "propertyValue": "I"
+            },
+            {
+              "propertyKey": "transactionMode",
+              "propertyValue": "R"
+            },
+            {
+              "propertyKey": "noOfRecordsToRetrieve",
+              "propertyValue": "1"
+            },
+            {
+              "propertyKey": "moreRecordsIndicator",
+              "propertyValue": "N"
+            },
+            {
+              "propertyKey": "searchMethod",
+              "propertyValue": "F"
+            },
+            {
+              "propertyKey": "responseErrorCode1",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode1",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode2",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode2",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode3",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode3",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode4",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode4",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseErrorCode5",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "responseReasonForCode5",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "accountNo",
+              "propertyValue": "0"
+            },
+            {
+              "propertyKey": "accountType",
+              "propertyValue": ""
+            },
+            {
+              "propertyKey": "filler",
+              "propertyValue": ""
+            }
+          ]
+        },
+        "payload": {
+          "responseCode": "1",
+          "responseMessage": "OK",
+          "responseTimestamp": "2020-03-23T15:53:49.0Z",
+          "customer": {
+            "branchNumber": "10200",
+            "bankNumber": "8",
+            "titleBeforeName": "",
+            "cifName1": "AG000002000000894",
+            "cifName2": "  000002000000894",
+            "titleAfterName": "S.E.",
+            "residentCode": "Y",
+            "occupationCode": "PBUM",
+            "dayOfBirth": "1968-11-05",
+            "birthIncorporationPlace": "JAKARTA",
+            "sexCode": "M",
+            "countryOfCitizenship": "000",
+            "motherMaidenName": "MA000002000000894",
+            "businessUnitCode": "MB100",
+            "jenisDibitur": "6",
+            "custPreviousName": "AG000002000000894",
+            "code1": "9000",
+            "pemilik": "886",
+            "lokasi": "393",
+            "hubunganDenganBank": "2000",
+            "hubunganKeluarga": "0",
+            "wilayahTLahir": "1",
+            "ratingDate": "2018-08-14",
+            "ratingSource": "EXME",
+            "ratingCode": "01",
+            "informationDate": "2018-08-14",
+            "reviewDate": "2018-08-14",
+            "address": [
+              {
+                "addressTypeCode": "01",
+                "address1": "00000200000089454                  XXXXX",
+                "address2": "000002000000894                    XXXXX",
+                "address3": "Kebon Jeruk",
+                "address4": "Sukabumi Utara JAKARTA 11540",
+                "postalCode": "11540"
+              }
+            ],
+            "contactDetails": {
+              "telephone": "021-5000002000000894",
+              "fax": "021 5000002000000894",
+              "handphone": "08151000002000000894",
+              "customerCategory": {
+                "customerTypeCode": "A"
+              }
+            },
+            "corporateCustomerData": {
+              "employerName": "BANK MANDIRI\\MUHAMMAD SYAHRONI",
+              "employmentStartDate": "2010-02-25",
+              "employmentEndDate": "1999-11-30",
+              "employerIndustryCode": "08",
+              "jobDesignationCode": "06",
+              "currentSalary": "6380673",
+              "previousSalary": "0",
+              "salaryCurrencyCode": "IDR",
+              "prefixName": "99",
+              "cooperativeMemberFlag": "0"
+            },
+            "identificationData": {
+              "identificationDetails": [
+                {
+                  "typeCode": "KTP",
+                  "idNumber": "3173412563931111",
+                  "expiryDate": null,
+                  "issuePlace": "JAKARTA",
+                  "statusCode": null
+                }
+              ]
+            },
+            "customerAdditionalData": {
+              "property": [
+                {
+                  "propertyKey": "codeField2",
+                  "propertyValue": "I1999"
+                },
+                {
+                  "propertyKey": "codeCurrency1",
+                  "propertyValue": "IDR"
+                },
+                {
+                  "propertyKey": "codeField1",
+                  "propertyValue": "I1001"
+                },
+                {
+                  "propertyKey": "remarkLine4",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "remarkLine3",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "remarkLine2",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "remarkLine1",
+                  "propertyValue": "PPA Information from new TF"
+                },
+                {
+                  "propertyKey": "codeAmount3",
+                  "propertyValue": "0"
+                },
+                {
+                  "propertyKey": "codeAmount2",
+                  "propertyValue": "5000000"
+                },
+                {
+                  "propertyKey": "codeAmount1",
+                  "propertyValue": "5000000"
+                },
+                {
+                  "propertyKey": "uic2UserDefined",
+                  "propertyValue": "A"
+                },
+                {
+                  "propertyKey": "codeFlag3",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "codeCurrency3",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "codeFlag2",
+                  "propertyValue": "I"
+                },
+                {
+                  "propertyKey": "codeField3",
+                  "propertyValue": ""
+                },
+                {
+                  "propertyKey": "codeCurrency2",
+                  "propertyValue": "IDR"
+                },
+                {
+                  "propertyKey": "codeFlag1",
+                  "propertyValue": "I"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

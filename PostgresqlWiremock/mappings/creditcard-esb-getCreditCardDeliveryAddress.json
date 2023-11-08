@@ -1,0 +1,90 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/gateway/CoreBankCreditCardGetDeliveryAddress/1.0/getCreditCardDeliveryAddress"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 38,
+    "headers": {
+      "X-Simulator": "PT-Wiremock",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Credential": "true",
+      "Access-Control-Allow-Headers": "accept, content-type"
+    },
+    "jsonBody": {
+      "getCreditCardDeliveryAddressResponse": {
+        "soaHeader": {
+          "messageVersion": "1.0",
+          "messageType": "JSON",
+          "messageSubType": "getCreditCardDeliveryAddress",
+          "messageSender": "EVR",
+          "senderDomain": "CoreBank",
+          "messageTimeStamp": "2020-06-22 10:33:00",
+          "initiatedTimeStamp": "2020-06-22 10:33:00",
+          "trackingID": "20200729",
+          "channelId": "112"
+        },
+        "messageHeader": {
+          "property": [
+            {
+              "propertyKey": "retrievalReferenceNumber",
+              "propertyValue": "662548745590"
+            },
+            {
+              "propertyKey": "systemTraceNo",
+              "propertyValue": "475766"
+            }
+          ]
+        },
+        "payload": {
+          "responseCode": "00",
+          "responseMessage": "Approved",
+          "responseTimeStamp": "2020-07-30 01:06:49",
+          "creditCardGetDeliveryAddrInfo": {
+            "creditCardNumber": "5243250301266000",
+            "sourceID": "EVR",
+            "originalCardDeliveryAddrCode": "4",
+            "address": [
+              {
+                "addressLine1": "JALAN JEND. SUDIRMAN",
+                "addressLine2": "THAMRIN",
+                "addressLine3": "JAKARTA",
+                "addressLine4": "INDONESIA",
+                "postCode": "12880",
+                "city": "JAKARTA",
+                "stateCode": "JKT",
+                "countryCode": "ID",
+                "addressCode": "1"
+              },
+              {
+                "addressLine1": "JL POKIA NO 69",
+                "addressLine2": "",
+                "addressLine3": "PETOGOGAN",
+                "addressLine4": "KEBAYORAN BARU",
+                "postCode": "12170",
+                "city": "JAKARTA SELATAN",
+                "stateCode": "JKT",
+                "countryCode": "ID",
+                "addressCode": "2"
+              },
+              {
+                "addressLine1": "KUNINGAN",
+                "addressLine2": "",
+                "addressLine3": "GAMBIR",
+                "addressLine4": "GAMBIR",
+                "postCode": "10110",
+                "city": "JAKARTA PUSAT",
+                "stateCode": "",
+                "countryCode": "",
+                "addressCode": "4"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

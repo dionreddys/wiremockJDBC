@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/employeeExtraction"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json; charset=utf-8" },
+    "transformerParameters":{
+      "subqueries": {
+        "ddl": {
+          "query": "SELECT * FROM ddl"
+        },
+        "asp": {
+          "query": "SELECT * FROM asp"
+        },
+        "ifs": {
+          "query": "SELECT * FROM ifs"
+        }
+      },
+      "resultType":"object"
+    },
+    "transformers": ["wiremock-csv"]
+  }
+}

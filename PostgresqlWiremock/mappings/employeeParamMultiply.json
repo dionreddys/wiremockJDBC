@@ -1,0 +1,16 @@
+{
+    "request": {
+      "method": "GET",
+      "urlPath": "/employeeMultiply"
+    },
+    "response": {
+      "status": 200,
+      "headers": { "Content-Type": "application/json; charset=utf-8" },
+      "transformerParameters":{
+        "query":"SELECT c.* FROM ddl c WHERE c.\"name\" like '${name}%' and c.\"role\" like '%${role}%'"
+      },
+      "transformers": ["wiremock-csv"]
+    }
+  }
+
+  

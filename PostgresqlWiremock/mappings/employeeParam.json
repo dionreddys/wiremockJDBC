@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/employeeParam",
+    "queryParameters" : {
+      "role" : {
+        "matches" : "..*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json; charset=utf-8" },
+    "transformerParameters":{
+      "query":"SELECT * FROM ddl c WHERE c.\"role\" = '${role}'",
+      "resultType":"list"
+    },
+    "transformers": ["wiremock-csv"]
+  }
+}

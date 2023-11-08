@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/employeeJoin"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json; charset=utf-8" },
+    "transformerParameters":{
+      "subqueries": {
+        "mandiri": {
+          "query": "SELECT d.nip, d.name, b.direktorat, b.head_name FROM ddl d INNER JOIN direktorat b ON d.direktorat = b.direktorat"
+        }
+      },
+      "resultType":"object"
+    },
+    "transformers": ["wiremock-csv"]
+  }
+}
